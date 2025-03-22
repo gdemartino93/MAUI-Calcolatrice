@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MAUI_Calcolatrice.MVVM.CalculatorView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CalculatorView">
+    <Grid RowDefinitions=".4*,.6*">
+        <VerticalStackLayout>
+            <Label StyleClass="lblText, lblOperations" Text="2*2" />
+            <Label StyleClass="lblText, lblResult" Text="4" />
+        </VerticalStackLayout>
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions=".25*,.25*,.25*,.25*"
+            RowDefinitions=".2*,.2*,.2*,.2*,.2*" />
+    </Grid>
+</ContentPage>

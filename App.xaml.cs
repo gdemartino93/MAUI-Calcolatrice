@@ -1,4 +1,6 @@
-﻿namespace MAUI_Calcolatrice
+﻿using MAUI_Calcolatrice.MVVM;
+
+namespace MAUI_Calcolatrice
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new CalculatorView();
         }
     }
 }
