@@ -19,4 +19,18 @@
         <Setter Property="FontSize" Value="45" />
         <Setter Property="FontFamily" Value="SublimaExtraBold" />
     </Style>
+
+    <!--#region BoxView-->
+    <Style TargetType="BoxView">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkPrimary}, Light={StaticResource LightPrimary}}" />
+        <Setter Property="CornerRadius" Value="15,15,0,0" />
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Grid-->
+    <Style Class="gridSpacing" TargetType="Grid">
+        <Setter Property="RowSpacing" Value="15" />
+        <Setter Property="ColumnSpacing" Value="15" />
+    </Style>
+    <!--#endregion-->
 </ResourceDictionary>
