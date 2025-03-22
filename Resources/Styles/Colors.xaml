@@ -8,6 +8,9 @@
     <Color x:Key="DarkSecondary">#272B33</Color>
     <Color x:Key="LightPrimary">#F2F2F2</Color>
     <Color x:Key="LightSecondary">#F7F7F7</Color>
+    <Color x:Key="YellowColor">#F4AB41</Color>
+    <Color x:Key="RedColor">#D3635E</Color>
+
     <!--  Note: For Android please see also Platforms\Android\Resources\values\colors.xml  -->
 
     <Color x:Key="Primary">#512BD4</Color>

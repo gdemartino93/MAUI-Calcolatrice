@@ -31,6 +31,33 @@
     <Style Class="gridSpacing" TargetType="Grid">
         <Setter Property="RowSpacing" Value="15" />
         <Setter Property="ColumnSpacing" Value="15" />
+        <Setter Property="Padding" Value="15" />
     </Style>
     <!--#endregion-->
+
+    <!--#region Buttons-->
+
+    <Style x:Key="BaseButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkSecondary}, Light={StaticResource LightSecondary}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}" />
+        <Setter Property="FontFamily" Value="SublimaLight" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="CornerRadius" Value="10" />
+    </Style>
+    <Style BasedOn="{StaticResource BaseButton}" TargetType="Button" />
+    <Style
+        BasedOn="{StaticResource BaseButton}"
+        Class="OperatorsButton"
+        TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource RedColor}" />
+    </Style>
+
+    <Style
+        BasedOn="{StaticResource BaseButton}"
+        Class="OtherActivitiesButton"
+        TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource YellowColor}" />
+    </Style>
+    <!--#endregion-->
+
 </ResourceDictionary>

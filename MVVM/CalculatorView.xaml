@@ -16,10 +16,19 @@
                 RowDefinitions="*,*,*,*,*"
                 StyleClass="gridSpacing">
                 <!--#region First Row-->
-                <Button Text="AC" />
-                <Button Grid.Column="1" Text="⌫" />
-                <Button Grid.Column="2" Text="%" />
-                <Button Grid.Column="3" Text="/" />
+                <Button StyleClass="OtherActivitiesButton" Text="AC" />
+                <Button
+                    Grid.Column="1"
+                    StyleClass="OtherActivitiesButton"
+                    Text="⌫" />
+                <Button
+                    Grid.Column="2"
+                    StyleClass="OtherActivitiesButton"
+                    Text="%" />
+                <Button
+                    Grid.Column="3"
+                    StyleClass="OperatorsButton"
+                    Text="/" />
                 <!--#endregion-->
                 <!--#region Second Row-->
                 <Button Grid.Row="1" Text="7" />
@@ -34,6 +43,7 @@
                 <Button
                     Grid.Row="1"
                     Grid.Column="3"
+                    StyleClass="OperatorsButton"
                     Text="*" />
                 <!--#endregion-->
                 <!--#region Third Row-->
@@ -49,6 +59,7 @@
                 <Button
                     Grid.Row="2"
                     Grid.Column="3"
+                    StyleClass="OperatorsButton"
                     Text="-" />
                 <!--#endregion-->
                 <!--#region Fourth Row-->
@@ -64,6 +75,7 @@
                 <Button
                     Grid.Row="3"
                     Grid.Column="3"
+                    StyleClass="OperatorsButton"
                     Text="+" />
                 <!--#endregion-->
                 <!--#region Fifth Row-->
@@ -82,6 +94,7 @@
                 <Button
                     Grid.Row="4"
                     Grid.Column="3"
+                    StyleClass="OperatorsButton"
                     Text="=" />
                 <!--#endregion-->
             </Grid>
