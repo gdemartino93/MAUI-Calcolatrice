@@ -1,4 +1,5 @@
-﻿using PropertyChanged;
+﻿using Dangl.Calculator;
+using PropertyChanged;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace MAUI_Calcolatrice.MVVM.ViewModels
             {
                 case "AC":
                     ClearFormula();
+                    ClearResult();
                     return;
 
                 case "RemoveLast":
@@ -36,10 +38,26 @@ namespace MAUI_Calcolatrice.MVVM.ViewModels
 
             Formula += input;
         });
+        public ICommand CalculateCommand => new Command(() =>
+        {
+            if (string.IsNullOrEmpty(Formula))
+            {
+                ClearFormula();
+                ClearResult();
+                return;
+            }
+
+            string result = Calculator.Calculate(Formula).Result.ToString();
+            Result = result;
+        });
 
         private void ClearFormula()
         {
             Formula = string.Empty;
+        }
+
+        private void ClearResult()
+        {
             Result = "0";
         }
 
